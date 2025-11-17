@@ -67,6 +67,7 @@ appendpath () {
 	appendpath "$HOME/.local/bin/scripts"
 	appendpath "$HOME/.cargo/bin"
 	appendpath "$HOME/bin"
+	appendpath "$HOME/../usr/local/bin"
 
 ## =========== CONFIG  ============ ##
 	export NIX_REMOTE=daemon
@@ -104,7 +105,7 @@ appendpath () {
     fi
 
 	#Bash completion
-	[[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && . /usr/share/bash-completion/bash_completion
+	[[ $PS1 && -f $PREFIX/usr/share/bash-completion/bash_completion ]] && . $PREFIX/usr/share/bash-completion/bash_completion
 
 	#TLDR command completion
 	isexec tldr && complete -W "$(tldr 2>/dev/null --list)" tldr

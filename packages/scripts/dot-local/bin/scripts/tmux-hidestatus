@@ -1,0 +1,8 @@
+#!/bin/bash
+if [[ -e $TMPDIR/tmux_status.lock ]]; then
+	rm $TMPDIR/tmux_status.lock
+	tmux set status on
+else
+	touch $TMPDIR/tmux_status.lock
+	tmux set status off
+fi
