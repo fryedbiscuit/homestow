@@ -5,9 +5,9 @@ if [ "$1" == "--init" ]; then
     pacman-key --init && pacman-key --populate
     TERMINAL_BASICS="git stow neovim wget iproute2 openssh ncurses-utils which fzf make htop rsync xclip"
     LANGUAGES="clang python pypy rust golang lua53 nodejs"
-    PROGRAMS="lazygit aria2 gh vifm mpv cmus ffplay imagemagick nmap-ncat"
+    PROGRAMS="lazygit aria2 gh vifm mpv cmus ffplay imagemagick"
     TERMUX="termux-x11 termux-api"
-    X11="xorg-server-xephyr xorg-xsetroot xorgproto openbox tigervnc picom firefox keepassxc nitrogen pavucontrol thunar xfce4-clipman-plugin sxhkd picom"
+    X11="xorg-server-xephyr xorg-xsetroot xorgproto openbox tigervnc picom firefox keepassxc pavucontrol thunar xfce4-clipman-plugin sxhkd picom"
     pacman -Syu base-devel $TERMINAL_BASICS $PROGRAMS $LANGUAGES $X11
 
     # Downloading my stuff and configurations

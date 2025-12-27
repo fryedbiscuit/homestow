@@ -2,3 +2,15 @@ dotfiles/dot-config/vifm/vifminfo.json
 packages/nvim/dot-config/nvim/plugged
 packages/dotfiles/dot-config/nvim/plugged
 packages/dotfiles/dot-config/vifm/vifminfo.json
+packages/dotfiles/dot-config/htop
+packages/dotfiles/dot-config/keepassxc
+packages/dotfiles/dot-config/lazygit
+packages/dotfiles/dot-config/neofetch
+packages/dotfiles/dot-config/pulse
+packages/dotfiles/dot-config/tldr
+packages/dotfiles/dot-config/QtProject.conf
+packages/dotfiles/dot-config/mimeapps.list
+packages/dotfiles/dot-config/pavucontrol.ini
+packages/dotfiles/dot-config/gh
+packages/dotfiles/dot-config/cmus
+packages/dotfiles/dot-config/coc

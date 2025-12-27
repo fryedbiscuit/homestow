@@ -45,11 +45,10 @@ appendpath () {
     alias tm='tmux new-session -A'
 	# alias tb='nc termbin.com 9999'
 	alias tb="(exec 3<>/dev/tcp/termbin.com/9999; cat >&3; cat <&3; exec 3<&-)"
-	alias bt='bluetoothctl'
-
 
 	## ====== Overrides ========##
 	alias ls='ls --color'
+
 	## ======== Fasd ===========##
 	if isexec fasd ; then
 		alias j='fasd_cd -d'
@@ -71,9 +70,10 @@ appendpath () {
 	appendpath "$HOME/../usr/local/bin"
 
 ## =========== CONFIG  ============ ##
-	export NIX_REMOTE=daemon
-	export TERMINAL=$(which st)
+	export TERMINAL="$(which st)"
 	export EDITOR="$(which nvim)"
+	export NIX_REMOTE=daemon
+	export SSH_AUTH_SOCK="$PREFIX"/var/run/ssh-agent.socket
 
 	# Autocd when typing path
 	shopt -s autocd
@@ -119,6 +119,3 @@ appendpath () {
 
 
 ## ========= AUTOSTART  =========== ##
-	# Launch ssh-agent
-	pgrep ssh-agent > /dev/null || eval $(ssh-agent) > /dev/null
-
