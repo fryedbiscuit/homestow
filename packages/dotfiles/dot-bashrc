@@ -119,3 +119,11 @@ appendpath () {
 
 
 ## ========= AUTOSTART  =========== ##
+	# Launch ssh-agent
+	pgrep ssh-agent > /dev/null || eval $(ssh-agent) > /dev/null
+
+## TMUX stuff
+if [ "$TMUX" ]; then
+	if [ "$(tmux display-message -p -F "#{session_name}")" = "popup" ]; then tmux set status off; fi
+fi
+

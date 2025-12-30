@@ -33,7 +33,7 @@ endif
 	set autoread
 	set noswapfile			" No swap
 	" set clipboard=unnamedplus     " Copy/paste to clipboard
-	set clipboard+=unnamed
+	set clipboard=unnamed
 	set path+=**			" Searches current directory recursively.
 	set tabstop=4
     set shiftwidth=4

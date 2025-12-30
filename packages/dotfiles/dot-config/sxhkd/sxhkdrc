@@ -5,7 +5,7 @@ super + shift + s
 
 # Open terminal
 super + Return
-	$TERMINAL
+	st
 
 # Kill window manager
 
@@ -14,7 +14,7 @@ super + ctrl + q
 
 # Open terminal with dvtm
 super + Shift_R
-    $TERMINAL -e tmux new -A -s session
+    st -e tmux new -A -s session
 
 # Lock Screen
 super + slash
@@ -22,7 +22,7 @@ super + slash
 
 # Open text editor with sxhkrc
 super + shift + slash
-	$TERMINAL -e nvim ~/.config/sxhkd/sxhkdrc
+	st -e nvim ~/.config/sxhkd/sxhkdrc
 
 # Toggle keyboard LED
 Scroll_Lock
@@ -43,18 +43,18 @@ super + shift + q
 
 # Control audio volume
 XF86AudioRaiseVolume
-	pamixer -i 5
+	pactl set-sink-volume @DEFAULT_SINK@ +5%
 XF86AudioLowerVolume
-	pamixer -d 5
+	pactl set-sink-volume @DEFAULT_SINK@ -5%
 XF86AudioMute
-	pamixer -t
+	pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 super + equal
-	pamixer -i 5 --allow-boost
+	pactl set-sink-volume @DEFAULT_SINK@ +5%
 super + minus
-	pamixer -d 5 --allow-boost
+	pactl set-sink-volume @DEFAULT_SINK@ -5%
 super + plus
-	pamixer -t
+	pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 ## Control backlight
 #XF86MonBrightnessUp
@@ -77,11 +77,11 @@ super + shift + t
 
 # Open bluetui
 super + shift + b
-	$TERMINAL -e bluetui
+	st -e bluetui
 
 # Open cmus
 super + shift + m
-	$TERMINAL -e cmus
+	st -e cmus
 
 # Open program
 super + d
@@ -97,15 +97,15 @@ super + shift + w
 
 # Open pulsemixer
 super + a
-	$TERMINAL -e pulsemixer
+	st -e pulsemixer
 
 # Open htop
 super + shift + h
-	$TERMINAL -e htop
+	st -e htop
 
 # Open Vifm
 super + v
-	$TERMINAL -e vifm
+	st -e vifm
 
 # Open PCManFm
 super + shift + v
