@@ -9,7 +9,7 @@ endif
 	source ~/.config/nvim/modules/plugins.vim
 	source ~/.config/nvim/modules/keybinds.vim
 	source ~/.config/nvim/modules/quickfix.vim
-	source ~/.config/nvim/modules/coc.vim
+	" source ~/.config/nvim/modules/coc.vim
 
 " Config
 " 	# Appearence
@@ -50,11 +50,6 @@ endif
 	set foldlevel=99
 	set foldcolumn=3
 
-	" function! CustomFold()
-	"   return printf('❄️ %6d%s', v:foldend - v:foldstart + 1, getline(v:foldstart))
-	" endfunction
-
-	" set fillchars=fold:\ | set foldtext=CustomFold() 
 
 "	# Netrw
 	let g:netrw_winsize = 25		"Set panel size

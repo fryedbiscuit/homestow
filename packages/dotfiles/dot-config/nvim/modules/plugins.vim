@@ -15,7 +15,7 @@ call plug#begin('~/.config/nvim/plugged')
 	" Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 	Plug 'mattn/emmet-vim'
 	" Plug 'mattn/calendar-vim'
-	Plug 'neoclide/coc.nvim', {'branch': 'release'} "Autocomplete
+	" Plug 'neoclide/coc.nvim', {'branch': 'release'} "Autocomplete
     Plug 'mtdl9/vim-log-highlighting'
 	" Plug 'dhruvasagar/vim-table-mode'
 	" Plug 'liuchengxu/vim-which-key'
