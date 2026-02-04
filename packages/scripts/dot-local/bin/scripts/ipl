@@ -1,2 +1,0 @@
-#!/bin/sh
-ip a s | grep -w inet | awk '{ print $2}'
