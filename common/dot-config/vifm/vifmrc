@@ -104,25 +104,15 @@ set vifminfo=dhistory,chistory,state,tui,shistory,
 	\ {Display in sxiv} sxiv %f,
 	\ {Display in ffplay} ffplay %f,
 
-
 	filetype *.bmp,*.jpg,*.jpeg,*.png,*.ico,*.tga
 	\ {Display in timg} timg %f && read,
+	\ {Set as android wallpaper} termux-wallpaper -l -f %f,
+
+	fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.ico,*.tga chafa --polite=on --size=%pwx%ph -f symbols %f
 
 	filetype *.gif
-	\ {Display in sxiv} sxiv -a %f,
-	\ {Display in icat} clear && icat %f && read -n1,
-	\ {Display in fbi} fbi -a %f,
-	\ {Display in mpv} mpv %f,
-
-    filetype *.webp
-	\ {Display in sxiv} sxiv -a %f,
-
-	filetype *.svg
-	\ {Display in sxiv} sxiv -a %f,
-
-	" fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.ico,*.tga icat -w %pw %c
-	" fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.ico,*.tga viu -w %pw %c
-	fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.ico,*.tga chafa --polite=on --size=%pwx%ph -f symbols %f
+	\ {Display in timg} timg %f && read,
+	\ {Set as android wallpaper} termux-wallpaper -l -f %f,
 
 
 	" Keepass database

@@ -16,3 +16,4 @@ packages/dotfiles/dot-config/cmus
 packages/dotfiles/dot-config/coc
 common/dot-config/nvim/coc-settings.json
 common/dot-config/nvim/lazy-lock.json
+common/dot-config/vifm/vifminfo.json

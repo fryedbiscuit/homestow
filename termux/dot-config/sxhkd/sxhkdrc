@@ -46,3 +46,7 @@ alt + v
 # Open PCManFm
 alt + shift + v
 	pcmanfm
+
+# Escape key emulation
+@XF86WWW
+	xdotool key Escape
