@@ -6,4 +6,3 @@ vim.opt.expandtab = false
 vim.opt.ignorecase = true   -- Ignore case in search...
 vim.opt.splitright = true
 vim.opt.splitbelow = true
-

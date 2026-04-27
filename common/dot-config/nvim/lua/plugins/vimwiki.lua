@@ -2,6 +2,7 @@ return {
  {
     "vimwiki/vimwiki",
     branch = "dev",
+	lazy = false,
     init = function()
         vim.g.vimwiki_list = {
             {

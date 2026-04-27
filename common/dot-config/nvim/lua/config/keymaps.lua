@@ -27,4 +27,7 @@ nest.applyKeymaps {
 	},
 	-- Oil
 	{'-', "<cmd>Oil<cr>"},
+
+	-- Vimwiki
+	{'<C-Minus>', "<cmd>VimWikiDecrementListItem<cr>"}
 }
