@@ -117,6 +117,8 @@ appendpath () {
     #FZF completion and hotkeys
     isexec fzf && eval "$(fzf --bash)"
 
+	isexec gopass && eval "$(gopass completion bash)"
+
 
 ## ========= AUTOSTART  =========== ##
 	# Launch ssh-agent
