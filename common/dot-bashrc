@@ -65,6 +65,7 @@ appendpath () {
 	appendpath "$HOME/.local/bin"
 	appendpath "$HOME/.local/bin/scripts"
 	appendpath "$HOME/.cargo/bin"
+	appendpath "$HOME/go/bin"
 	appendpath "$HOME/bin"
 	appendpath "$HOME/../usr/local/bin"
 

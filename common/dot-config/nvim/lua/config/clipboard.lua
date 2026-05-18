@@ -29,6 +29,7 @@ local function set_clipboard_provider()
 end
 
 local provider = set_clipboard_provider()
+
 if provider then
     vim.g.clipboard = provider
 end
