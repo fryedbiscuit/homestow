@@ -44,6 +44,8 @@ appendpath () {
 	alias v="nvim"
 	# alias tb='nc termbin.com 9999'
 	alias tb="(exec 3<>/dev/tcp/termbin.com/9999; cat >&3; cat <&3; exec 3<&-)"
+	alias gsync="git pull && git push"
+	alias commit="git commit --all -m \"`date`\""
 
 	## ====== Overrides ========##
 	alias ls='ls --color'
@@ -122,9 +124,6 @@ appendpath () {
 
 
 ## ========= AUTOSTART  =========== ##
-	# Launch ssh-agent
-	pgrep ssh-agent > /dev/null || eval $(ssh-agent) > /dev/null
-
 	## TMUX stuff
 	if [ "$TMUX" ]; then
 		if [ "$(tmux display-message -p -F "#{session_name}")" = "popup" ]; then tmux set status off; fi
