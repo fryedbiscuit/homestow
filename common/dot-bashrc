@@ -131,3 +131,4 @@ appendpath () {
 
 	# if [ -z "$ZELLIJ" ]; then zellij a -c; fi
 
+export LEDGER_FILE=$HOME/git/finances/master.ledger
