@@ -1,0 +1,1 @@
+hledger-get-prices >> $HOME/git/finances/prices.ledger

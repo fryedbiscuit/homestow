@@ -1,0 +1,1 @@
+hledger -f $HOME/git/finances/current.ledger add
