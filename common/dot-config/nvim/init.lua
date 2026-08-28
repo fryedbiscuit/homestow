@@ -12,3 +12,8 @@ vim.api.nvim_create_autocmd("BufEnter", {
     pattern = "*.md,*.wiki",
     command = "syntax sync fromstart"
 })
+
+--Enable highlights in custom types coc
+vim.api.nvim_set_hl(0, 'CocSemType', { link = 'CocSemTypeDefaultLibrary' })
+vim.api.nvim_set_hl(0, 'CocSemStruct', { link = 'CocSemStructDefaultLibrary' })
+vim.api.nvim_set_hl(0, 'CocSemClass', { link = 'CocSemClassDefaultLibrary' })
