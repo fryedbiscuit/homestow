@@ -20,11 +20,11 @@ nest.applyKeymaps {
 		},
 	}},
 	-- Buffers
-	{'b',
+	{'b', {
 		{'n', "<cmd>bnext<cr>"},
 		{'p', "<cmd>bprevious<cr>"},
 		{'d', "<cmd>bdelete<cr>"},
-	},
+	}},
 	-- Oil
 	{'-', "<cmd>Oil<cr>"},
 
