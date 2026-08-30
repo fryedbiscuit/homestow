@@ -1,0 +1,4 @@
+#!/bin/sh
+# Strip the shebang line, pass through prism, and run via tcc
+# sed 1d "$1" | prism - -o - | tcc -run - "${@:2}"
+sed 1d "$1" | prism run -

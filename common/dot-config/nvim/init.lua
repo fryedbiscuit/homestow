@@ -17,6 +17,7 @@ vim.api.nvim_create_autocmd("BufEnter", {
 vim.api.nvim_set_hl(0, 'CocSemType', { link = 'CocSemTypeDefaultLibrary' })
 vim.api.nvim_set_hl(0, 'CocSemStruct', { link = 'CocSemStructDefaultLibrary' })
 vim.api.nvim_set_hl(0, 'CocSemClass', { link = 'CocSemClassDefaultLibrary' })
+
 vim.filetype.add({
   -- 1. Match by file extension
   -- extension = {
