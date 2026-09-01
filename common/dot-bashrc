@@ -32,7 +32,7 @@ appendpath () {
 ## =========== ALIASES ============ ##
 	alias ,s='. ~/.bashrc' # Source bashrc
 	alias ,c='$EDITOR $HOME/.bashrc' # Edit bashrc
-    alias ,t="tmux new -A"
+    alias ,t="tmux new -A -s main"
 
 	alias la='ls -a'
 	alias ll='ls -lh'
