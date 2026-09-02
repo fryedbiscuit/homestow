@@ -7,6 +7,6 @@ Diagnostics:
 CompileFlags:
   Add:
     - "-Ddefer=if(1)"
-    - "-Draw=auto"
+    - "-Draw="
     - "-Dorelse=||"
 

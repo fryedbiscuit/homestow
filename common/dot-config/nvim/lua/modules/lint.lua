@@ -19,7 +19,7 @@ vim.api.nvim_create_autocmd({ "BufWritePost", "BufReadPost" }, {
     local file = vim.api.nvim_buf_get_name(bufnr)
     if file == "" then return end
 
-    vim.system({ "prism", "-c", file }, { text = true }, function(obj)
+    vim.system({ "prism", "-o", "-", "-c", file }, { text = true }, function(obj)
       local output = (obj.stdout or "") .. (obj.stderr or "")
       local diagnostics = {}
 
