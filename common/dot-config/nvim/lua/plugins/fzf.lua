@@ -1,14 +1,21 @@
+nest = require"nest"
+
 return {
 	{
-	  "ibhagwan/fzf-lua",
-	  -- optional for icon support
-	  -- dependencies = { "nvim-tree/nvim-web-devicons" },
-	  -- or if using mini.icons/mini.nvim
-	  dependencies = { "nvim-mini/mini.icons" },
-	  ---@module "fzf-lua"
-	  ---@type fzf-lua.Config|{}
-	  ---@diagnostic disable: missing-fields
-	  opts = {}
-	  ---@diagnostic enable: missing-fields
+		"ibhagwan/fzf-lua",
+		dependencies = { "nvim-mini/mini.icons" },
+		opts = {},
+		config = function ()
+			nest.applyKeymaps(
+			{'<leader>', 
+				{ 'f', {
+					{'f', "<cmd>FzfLua files<cr>"},
+					{'F', "<cmd>FzfLua filetypes<cr>"},
+					{'b', "<cmd>FzfLua buffers<cr>"},
+					{'g', "<cmd>FzfLua grep<cr>"},
+					{'l', "<cmd>FzfLua blines<cr>"},
+				},
+			}})
+		end
 	}
 }

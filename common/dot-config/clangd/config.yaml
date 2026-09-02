@@ -4,3 +4,9 @@ Diagnostics:
     - pp_invalid_directive
     - c23-extensions
 
+CompileFlags:
+  Add:
+    - "-Ddefer=if(1)"
+    - "-Draw=auto"
+    - "-Dorelse=||"
+

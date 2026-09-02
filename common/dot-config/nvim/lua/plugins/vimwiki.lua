@@ -12,6 +12,11 @@ return {
             },
         }
         vim.g.vimwiki_global_ext = 1
+		vim.api.nvim_create_autocmd("BufEnter", {
+			pattern = "*.md,*.wiki",
+			command = "syntax sync fromstart"
+		})
+
     end,
 },
 }
